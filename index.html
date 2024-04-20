@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWOT and STUDY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">SWOT AND STUDY</div>
+        <div class="menu">
+    <a href="profile.html" class="search-icon" onclick="toggleSearch()">🔍</a>
+    <div id="search-box" class="hidden">
+        <input type="text" placeholder="Enter a name..." id="search-input" onkeyup="searchContent(event)">
+    </div>
+    <a href="#Find"> Find </a>
+    <a href="#rooms">Rooms</a>
+    <a href="#progress">Progress</a>
+    <a href="profile.html">Profile</a>
+    <a href="#courses">Courses</a>
+    <a href="#cart">🛒</a>
+</div>
+    </nav>
+<nav>
+<div class="btnalignright">
+	<a href="profile.html">Profile</a>
+	<img src="path-to-image-3.jpg" alt="ProfilePicture">
+
+</div>
+</nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>One Place To Find All Your Study Needs</h1>
+    </section>
+
+  <!-- Placeholder for dynamically loaded course content -->
+  <section class="course-menu">
+    <!-- Course items will be dynamically loaded here -->
+  </section>
+
+   <section class="ad-section">
+        <h2>Courses For You</h2>
+        <div class="ad-images">
+            <img src="path-to-your-course-ad-placeholder.jpg" alt="Course 	Advertisement">
+            <img src="path-to-your-1course-ad-placeholder.jpg" alt="Course Advertisement">
+            <img src="path-to-your-2course-ad-placeholder.jpg" alt="Course Advertisement">
+        </div>
+    </section>
+  
+    <section class="ad-section2">
+        <h2>Live Rooms</h2>
+        <div class="ad-images">
+            <img src="path-to-your-3course-ad-placeholder.jpg" alt="Course Advertisement">
+            <img src="path-to-your-4course-ad-placeholder.jpg" alt="Course Advertisement">
+            <img src="path-to-your-5course-ad-placeholder.jpg" alt="Course Advertisement">
+        </div>
+    </section>
+
+<section class="matching-partners">
+  <h2>Matching Partners</h2>
+  <div class="partners-container">
+    <div class="partner-profile">
+      <img src="path-to-image-1.jpg" alt="Profile Picture">
+      <div class="partner-details">
+        <strong>Name:</strong> Alice Johnson<br>
+        <strong>Course:</strong> Introduction to Programming<br>
+        <strong>Active Days:</strong> Mon, Wed, Fri<br>
+        <strong>Location:</strong> New York, NY
+      </div>
+    </div>
+    <div class="partner-profile">
+      <img src="path-to-image-2.jpg" alt="Profile Picture">
+      <div class="partner-details">
+        <strong>Name:</strong> Bob Smith<br>
+        <strong>Course:</strong> Advanced Mathematics<br>
+        <strong>Active Days:</strong> Tue, Thu<br>
+        <strong>Location:</strong> Los Angeles, CA
+      </div>
+    </div>
+    <div class="partner-profile">
+      <img src="path-to-image-3.jpg" alt="Profile Picture">
+      <div class="partner-details">
+        <strong>Name:</strong> Carol White<br>
+        <strong>Course:</strong> yoga<br>
+        <strong>Active Days:</strong> Mon, Thu<br>
+        <strong>Location:</strong> Chicago, IL
+      </div>
+    </div>
+    <div class="partner-profile">
+      <img src="path-to-image-4.jpg" alt="Profile Picture">
+      <div class="partner-details">
+        <strong>Name:</strong> Dave Lee<br>
+        <strong>Course:</strong>physical trainer<br>
+        <strong>Active Days:</strong> Wed, Fri<br>
+        <strong>Location:</strong> Miami, FL
+      </div>
+    </div>
+    <div class="partner-profile">
+      <img src="path-to-image-5.jpg" alt="Profile Picture">
+      <div class="partner-details">
+        <strong>Name:</strong> Emma Green<br>
+        <strong>Course:</strong> Nutrition<br>
+        <strong>Active Days:</strong> Tue, Sat<br>
+        <strong>Location:</strong> Seattle, WA
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+<div id="chatbot">
+    <div id="chatbot-circle" onclick="toggleChatbot()">
+        <img src="chat-icon.png" alt="Chat Icon" class="chatbot-icon"/> <!-- Replace with your chat icon -->
+    </div>
+    <div id="chat-window" class="hidden">
+        <div id="messages"></div>
+	<p class="chatbot-text">Chat with us!</p>
+        <input type="text" id="chat-input" placeholder="chat" onkeypress="sendMessage(event)">
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
