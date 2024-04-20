@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const words = ["Find", "Connect", "Learn", "Study", "Grow", "Teach"]; // Background text words
+    const backgroundText = document.getElementById('background-text'); // Reference for background text
+    const wordDisplayDuration = 2000; // Time between focus shifts
+    let currentWordIndex = 0; // Track the current word index
+
+    // Display all words at once with light color
+    words.forEach((wordText) => {
+        const word = document.createElement('div'); // Create a word element
+        word.className = 'word'; // Class for styling
+        word.textContent = wordText; // Set the word text
+        word.style.color = 'rgba(255, 255, 255, 0.2)'; // Light color initially
+        word.style.transition = 'color 1s ease'; // Smooth transition
+
+        backgroundText.appendChild(word); // Add to background text
+    });
+
+    // Function to focus on words in the background text
+    function focusBackgroundText() {
+        const allWords = backgroundText.querySelectorAll('.word'); // Get all words
+
+        allWords.forEach((word, index) => {
+            word.style.color = (index === currentWordIndex) ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.2)'; // Darken when focused
+        });
+
+        currentWordIndex = (currentWordIndex + 1) % words.length; // Increment and loop
+
+        // Schedule the next focus shift
+        setTimeout(focusBackgroundText, wordDisplayDuration); // Shift focus every 2 seconds
+    }
+
+    // Start the focus animation for the background text
+    focusBackgroundText();
+});
+
+</script>
+<head>
+<div class="background-text" id="background-text">
+</div>
+    <meta charset="UTF-8">
+    <title>SWOT AND STUDY - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Your existing CSS file -->
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="login-title">SWOT AND STUDY</h1> <!-- Define the style explicitly -->
+
+        <form class="login-form">
+            <input type="email" placeholder="Email" class="login-input" required>
+            <input type="password" placeholder="Password" class="login-input" required>
+            <button type="submit" onclick="window.location.href='index.html'" class="login-button">Sign In</button>
+
+
+            <div class="social-login">
+                <span>Or Sign In With:</span>
+                <div class="social-icons">
+                    <a href="#"><img src="google.png" alt="Google"></a>
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+
+            <div class="login-links">
+                <a href="#" class="signup-link">Sign Up</a>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

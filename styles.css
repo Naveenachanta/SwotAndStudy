@@ -22,9 +22,12 @@ header {
 
 .logo {
     font-weight: 900;
-    font-size: 24px;
+    font-size: 36px;
 }
-
+.menu {
+  display: flex;
+  align-items: center; /* Aligns items along the center line */
+}
 .menu a {
     text-decoration: none;
     transition: transform 0.2s, color 0.2s;
@@ -310,10 +313,7 @@ header.sticky {
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-.btnalignright:hover {
-    transform: scale(1.07);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-}
+
 
 .btnalignright img:hover {
     transform: scale(1.1);
@@ -325,3 +325,374 @@ header.sticky {
     text-decoration: none;
     margin-right: 10px; /* Adjust this for spacing between text and image */
 }
+.btnalignright a:hover {
+    transform: scale(1.1);
+    color: #cbbcc0;
+}
+login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.login-title {
+    font-size: 48px; /* Font size for the logo */
+    font-weight: 700; /* Bold weight */
+    display: inline-block; /* Keep the logo in line */
+    background: linear-gradient(90deg, #ff4343, #506bb4); /* Linear gradient */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent to reveal gradient */
+    transition: color 1s ease; /* Smooth transition for focus */
+}
+
+/* Form for login inputs and buttons */
+.login-form {
+    background: rgba(255, 255, 255, 0.1); /* Light background for form */
+    padding: 30px; /* Padding around form */
+    border-radius: 10px; /* Smooth edges */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Input fields for email and password */
+.login-input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    border: none; /* Clean look */
+    border-radius: 5px; /* Smooth edges */
+    background: rgba(255, 255, 255, 0.2); /* Light background */
+    color: white; /* White text */
+    font-size: 16px; /* Standard font size */
+    margin-bottom: 10px; /* Space between inputs */
+}
+
+/* Sign-in button */
+.login-button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding for a comfortable button */
+    background: linear-gradient(90deg, #6e8ff6, #506bb4); /* Gradient */
+    border: none; /* Clean edges */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* White text */
+    font-size: 18px; /* Larger font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for sign-in button */
+.login-button:hover {
+    background: linear-gradient(90deg, #506bb4, #6e8ff6); /* Gradient reverse on hover */
+}
+
+/* Social login section */
+.social-login {
+    margin-top: 10px; /* Space above social login */
+    text-align: center; /* Center-align text */
+}
+
+/* Social login icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center-align icons */
+    gap: 15px; /* Space between icons */
+}
+
+/* Social icons for different platforms */
+.social-icons a {
+    display: inline-block; /* Ensure icons align properly */
+    width: 30px; /* Size for icons */
+    height: 30px;
+    border-radius: 50%; /* Circular shape */
+}
+
+/* Links for 'Sign Up' and 'Forgot Password' */
+.login-links {
+    margin-top: 10px; /* Space above links */
+    display: flex;
+    justify-content: space-between; /* Space out links */
+}
+
+/* Styling for 'Sign Up' and 'Forgot Password' links */
+.signup-link,
+.forgot-password {
+    color: #6e8ff6; /* Matching site theme */
+    text-decoration: none; /* No underlining */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for links */
+.signup-link:hover,
+.forgot-password:hover {
+    color: #cbbcc0; /* Change color on hover */
+}
+login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+
+
+/* Form for login inputs and buttons */
+.login-form {
+    background: rgba(255, 255, 255, 0.1); /* Light background for form */
+    padding: 30px; /* Padding around form */
+    border-radius: 10px; /* Smooth edges */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Input fields for email and password */
+.login-input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    border: none; /* Clean look */
+    border-radius: 5px; /* Smooth edges */
+    background: rgba(255, 255, 255, 0.2); /* Light background */
+    color: white; /* White text */
+    font-size: 16px; /* Standard font size */
+    margin-bottom: 10px; /* Space between inputs */
+}
+
+/* Sign-in button */
+.login-button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding for a comfortable button */
+    background: linear-gradient(90deg, #6e8ff6, #506bb4); /* Gradient */
+    border: none; /* Clean edges */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* White text */
+    font-size: 18px; /* Larger font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for sign-in button */
+.login-button:hover {
+    background: linear-gradient(90deg, #506bb4, #6e8ff6); /* Gradient reverse on hover */
+}
+
+/* Social login section */
+.social-login {
+    margin-top: 10px; /* Space above social login */
+    text-align: center; /* Center-align text */
+}
+
+/* Social login icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center-align icons */
+    gap: 15px; /* Space between icons */
+}
+
+/* Social icons for different platforms */
+.social-icons a {
+    display: inline-block; /* Ensure icons align properly */
+    width: 30px; /* Size for icons */
+    height: 30px;
+    border-radius: 50%; /* Circular shape */
+}
+
+/* Links for 'Sign Up' and 'Forgot Password' */
+.login-links {
+    margin-top: 10px; /* Space above links */
+    display: flex;
+    justify-content: space-between; /* Space out links */
+}
+
+/* Styling for 'Sign Up' and 'Forgot Password' links */
+.signup-link,
+.forgot-password {
+    color: #6e8ff6; /* Matching site theme */
+    text-decoration: none; /* No underlining */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for links */
+.signup-link:hover,
+.forgot-password:hover {
+    color: #cbbcc0; /* Change color on hover */
+}
+login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+
+
+/* Form for login inputs and buttons */
+.login-form {
+    background: rgba(255, 255, 255, 0.1); /* Light background for form */
+    padding: 30px; /* Padding around form */
+    border-radius: 10px; /* Smooth edges */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Input fields for email and password */
+.login-input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    border: none; /* Clean look */
+    border-radius: 5px; /* Smooth edges */
+    background: rgba(255, 255, 255, 0.2); /* Light background */
+    color: white; /* White text */
+    font-size: 16px; /* Standard font size */
+    margin-bottom: 10px; /* Space between inputs */
+}
+
+/* Sign-in button */
+.login-button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding for a comfortable button */
+    background: linear-gradient(90deg, #6e8ff6, #506bb4); /* Gradient */
+    border: none; /* Clean edges */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* White text */
+    font-size: 18px; /* Larger font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for sign-in button */
+.login-button:hover {
+    background: linear-gradient(90deg, #506bb4, #6e8ff6); /* Gradient reverse on hover */
+}
+
+/* Social login section */
+.social-login {
+    margin-top: 10px; /* Space above social login */
+    text-align: center; /* Center-align text */
+}
+
+/* Social login icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center-align icons */
+    gap: 15px; /* Space between icons */
+}
+
+/* Social icons for different platforms */
+.social-icons a {
+    display: inline-block; /* Ensure icons align properly */
+    width: 30px; /* Size for icons */
+    height: 30px;
+    border-radius: 50%; /* Circular shape */
+}
+
+/* Links for 'Sign Up' and 'Forgot Password' */
+.login-links {
+    margin-top: 10px; /* Space above links */
+    display: flex;
+    justify-content: space-between; /* Space out links */
+}
+
+/* Styling for 'Sign Up' and 'Forgot Password' links */
+.signup-link,
+.forgot-password {
+    color: #fff; /* Matching site theme */
+    text-decoration: none; /* No underlining */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for links */
+.signup-link:hover,
+.forgot-password:hover {
+    color: #cbbcc0; /* Change color on hover */
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Login form container */
+.login-form {
+    background: rgba(255, 255, 255, 0.1); /* Light background for the form */
+    padding: 30px; /* Padding around the form */
+    border-radius: 10px; /* Smooth edges */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Input fields for email and password */
+.login-input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    border: none; /* No borders */
+    border-radius: 5px; /* Rounded edges */
+    background: rgba(255, 255, 255, 0.2); /* Light background */
+    color: white; /* White text */
+    font-size: 16px; /* Standard font size */
+    margin-bottom: 10px; /* Space between inputs */
+}
+
+/* Sign-in button styling */
+.login-button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Comfortable padding */
+    background: linear-gradient(90deg, #ff4343, #506bb4);
+    border-radius: 5px; /* Rounded edges */
+    color: white; /* White text */
+    font-size: 18px; /* Larger font size */
+    cursor: pointer; /* Interactive cursor */
+    transition: background 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for sign-in button */
+.login-button:hover {
+    background: linear-gradient(90deg, #506bb4, #6e8ff6); /* Gradient reverse on hover */
+}
+
+/* Social login section and alignment */
+.social-login {
+    text-align: center; /* Center-align the social login section */
+    margin-top: 20px; /* Space above the social login */
+}
+
+/* Ensure proper spacing and alignment for social icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center-align icons */
+    gap: 20px; /* Ensure proper spacing between icons */
+}
+
+/* Social media icons styling */
+.social-icons a {
+    display: inline-block; /* Ensure inline behavior */
+    text-decoration: none; /* No underline */
+    color: #fff; /* Consistent color for links */
+}
+
+.social-icons img {
+    width: 30px; /* Consistent size for icons */
+    height: 30px;
+    border-radius: 50%; /* Circular shape */
+    transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for social icons */
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+.background-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: -1; /* Keep in the background */
+    display: flex;
+    flex-direction: row; /* Align words in a column */
+    justify-content: center; /* Center vertically */
+    align-items: start; /* Center horizontally */
+    font-size: 72px; /* Moderate font size */
+    text-align: center; /* Center text */
+    transition: opacity 1s ease; /* Smooth transition */
+}
+

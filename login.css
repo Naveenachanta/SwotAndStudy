@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Background color for the entire page */
+    color: #fff; /* Default text color */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+.site-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.1); /* Light background for form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.login-input {
+    width: 100%; /* Take full width of the container */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Light background for input */
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px; /* Spacing between inputs */
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background: linear-gradient(90deg, #6e8ff6, #506bb4); /* Gradient button */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+.login-button:hover {
+    background: linear-gradient(90deg, #506bb4, #6e8ff6); /* Reverse gradient on hover */
+}
+
+.social-login {
+    margin-top: 10px; /* Spacing above social login */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between social icons */
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px; /* Size for social icons */
+    height: 30px;
+}
+
+.login-links {
+    margin-top: 10px; /* Spacing above links */
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px; /* Smaller text size */
+}
+
+.signup-link,
+.forgot-password {
+    color: #6e8ff6; /* Matching site theme */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.signup-link:hover,
+.forgot-password:hover {
+    color: #cbbcc0; /* Change color on hover */
+}
